@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,46 +16,18 @@
 
     * { box-sizing: border-box; }
 
-    body {
-      margin: 0;
-      background: var(--cream);
-      color: var(--dark);
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.7;
-    }
-
-    .notice {
-      background: #e8e2d8;
-      text-align: center;
-      padding: 12px 18px;
-      font-size: 13px;
-    }
-
+    body { margin: 0; background: var(--cream); color: var(--dark); font-family: Arial, Helvetica, sans-serif; line-height: 1.7; }
+    .notice { background: #e8e2d8; text-align: center; padding: 12px 18px; font-size: 13px; }
     header { padding: 25px 20px; text-align: center; }
     .brand { font-family: Georgia, serif; font-size: 32px; letter-spacing: 1px; margin: 0; }
     .tagline { margin: 2px 0 18px; font-size: 13px; letter-spacing: 3px; text-transform: uppercase; }
 
-    <nav aria-label="Main navigation">
-  <a href="index.html">Home</a>
-  <a href="classes.html">Mat Pilates Classes</a>
-  <a href="beginners.html">Beginner Pilates</a>
-  <a href="campus.html">Near Campus</a>
-  <a href="pricing.html">Pricing &amp; Memberships</a>
-</nav>
-
+    nav { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px 24px; padding: 14px 16px; background: var(--sage); }
     nav a { color: white; text-decoration: none; font-size: 14px; font-weight: bold; }
     nav a:hover, nav a:focus { text-decoration: underline; }
 
     .hero { background: var(--rose); text-align: center; padding: 60px 22px; }
-    .hero h1 {
-      font-family: Georgia, serif;
-      font-weight: normal;
-      font-size: clamp(32px, 6vw, 48px);
-      line-height: 1.2;
-      max-width: 850px;
-      margin: 0 auto 18px;
-    }
-
+    .hero h1 { font-family: Georgia, serif; font-weight: normal; font-size: clamp(32px, 6vw, 48px); line-height: 1.2; max-width: 850px; margin: 0 auto 18px; }
     .hero p { max-width: 680px; margin: 0 auto; font-size: 17px; }
     main { max-width: 900px; margin: auto; padding: 40px 22px; }
     h2 { font-family: Georgia, serif; font-size: 29px; font-weight: normal; line-height: 1.3; }
@@ -90,6 +63,7 @@
     <a href="classes.html">Mat Pilates Classes</a>
     <a href="beginners.html">Beginner Pilates</a>
     <a href="campus.html">Near Campus</a>
+    <a href="pricing.html">Pricing &amp; Memberships</a>
   </nav>
 
   <section class="hero">
@@ -112,10 +86,10 @@
         understand so you can develop confidence over time.
       </p>
       <p>
-        Pilates is a form of exercise that emphasizes controlled movement,
-        breathing, alignment, and core stability. Mat classes generally use
-        body weight and a floor mat, with optional small props in some
-        routines. You can start without investing in expensive equipment.
+        Pilates emphasizes controlled movement, breathing, alignment, and
+        core stability. Mat classes generally use body weight and a floor
+        mat, with optional small props in some routines. You can start
+        without investing in expensive equipment.
       </p>
     </section>
 
@@ -125,9 +99,9 @@
       <article class="step">
         <h3>1. Settle in and get comfortable</h3>
         <p>
-          You begin on your mat, get familiar with the space, and learn how
-          to position your body for the exercises. The instructor explains
-          the plan and encourages you to ask questions.
+          Get familiar with the space and learn how to position your body
+          for the exercises. The instructor explains the plan and encourages
+          you to ask questions.
         </p>
       </article>
 
@@ -135,8 +109,8 @@
         <h3>2. Practice breathing and alignment</h3>
         <p>
           Pilates uses intentional breathing to support controlled movement.
-          You will practice paying attention to your posture and moving
-          without rushing through each repetition.
+          You will practice paying attention to posture and moving without
+          rushing through each repetition.
         </p>
       </article>
 
@@ -208,9 +182,9 @@
         <h3>What if I cannot do a particular exercise?</h3>
         <p>
           Ask for a modification or take a break. Everyone has different
-          strengths and movement needs, and an exercise can often be
-          adjusted. If you have an injury or medical concern, seek
-          appropriate professional guidance before participating.
+          strengths and movement needs, and an exercise can often be adjusted.
+          If you have an injury or medical concern, seek appropriate
+          professional guidance before participating.
         </p>
       </article>
     </section>
@@ -223,11 +197,15 @@
         a routine that supports your everyday life.
       </p>
       <p>
-        Explore the different options on our
-        <a href="classes.html">mat Pilates classes page</a>
-        to learn more about our fictional class formats.
+        Explore our <a href="classes.html">mat Pilates class guide</a>
+        to learn about the different class formats.
       </p>
-      <a class="button" href="classes.html">Explore Class Options</a>
+      <p>
+        You can also compare our fictional
+        <a href="pricing.html">class prices and memberships</a>
+        before choosing an option.
+      </p>
+      <a class="button" href="pricing.html">View Pricing &amp; Memberships</a>
     </section>
   </main>
 
@@ -237,12 +215,12 @@
     </p>
     <p>Form &amp; Flow Pilates | Iowa City, Iowa</p>
     <p>
-  <a href="index.html">Home</a> ·
-  <a href="classes.html">Classes</a> ·
-  <a href="beginners.html">Beginners</a> ·
-  <a href="campus.html">Near Campus</a> ·
-  <a href="pricing.html">Pricing &amp; Memberships</a>
-</p>
+      <a href="index.html">Home</a> ·
+      <a href="classes.html">Classes</a> ·
+      <a href="beginners.html">Beginners</a> ·
+      <a href="campus.html">Near Campus</a> ·
+      <a href="pricing.html">Pricing &amp; Memberships</a>
+    </p>
   </footer>
 </body>
 </html>
