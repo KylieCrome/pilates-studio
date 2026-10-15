@@ -2,221 +2,267 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore mat Pilates classes in Iowa City, IA, including beginner-friendly movement, core strength, flexibility, and full-body Pilates at Form & Flow.">
-  <title>Mat Pilates Classes in Iowa City, IA | Form & Flow</title>
-  <style>
-    :root {
-      --cream: #f8f5ef;
-      --sage: #879783;
-      --dark: #303b32;
-      --rose: #e9d8ce;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mat Pilates Classes | Form & Flow Pilates</title>
 
-    * { box-sizing: border-box; }
+    <style>
+        :root {
+            --cream: #faf6ef;
+            --sage: #a8b5a0;
+            --dark-green: #35483b;
+            --rose: #ead5cf;
+            --white: #ffffff;
+            --text: #3d433d;
+        }
 
-    body {
-      margin: 0;
-      background: var(--cream);
-      color: var(--dark);
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.7;
-    }
+        * {
+            box-sizing: border-box;
+        }
 
-    .notice { background: #e8e2d8; text-align: center; padding: 12px 18px; font-size: 13px; }
-    header { padding: 25px 20px; text-align: center; }
-    .brand { font-family: Georgia, serif; font-size: 32px; letter-spacing: 1px; margin: 0; }
-    .tagline { margin: 2px 0 18px; font-size: 13px; letter-spacing: 3px; text-transform: uppercase; }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: var(--cream);
+            color: var(--text);
+            line-height: 1.7;
+        }
 
-    nav {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 10px 24px;
-      padding: 14px 16px;
-      background: var(--sage);
-    }
+        .notice {
+            padding: 9px 15px;
+            text-align: center;
+            background: var(--dark-green);
+            color: var(--white);
+            font-size: 12px;
+        }
 
-    nav a { color: white; text-decoration: none; font-size: 14px; font-weight: bold; }
-    nav a:hover, nav a:focus { text-decoration: underline; }
+        header {
+            padding: 25px 20px;
+            text-align: center;
+            background: var(--cream);
+        }
 
-    .hero { background: var(--rose); text-align: center; padding: 60px 22px; }
-    .hero h1 { font-family: Georgia, serif; font-weight: normal; font-size: clamp(32px, 6vw, 48px); line-height: 1.2; max-width: 850px; margin: 0 auto 18px; }
-    .hero p { max-width: 680px; margin: 0 auto; font-size: 17px; }
-    main { max-width: 1000px; margin: auto; padding: 40px 22px; }
-    h2 { font-family: Georgia, serif; font-size: 29px; font-weight: normal; line-height: 1.3; }
-    h3 { font-family: Georgia, serif; font-size: 21px; font-weight: normal; }
-    .cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
-    .card { background: white; padding: 24px; border-top: 4px solid var(--sage); }
-    .soft-section { background: #e8e9df; padding: 28px; margin: 30px 0; }
-    table { width: 100%; border-collapse: collapse; background: white; }
-    th, td { text-align: left; padding: 12px; border-bottom: 1px solid #deded6; }
-    th { background: var(--sage); color: white; }
-    footer { background: var(--dark); color: white; text-align: center; padding: 28px 20px; font-size: 13px; }
-    footer a { color: white; }
+        .logo {
+            margin: 0;
+            color: var(--dark-green);
+            font-family: Georgia, serif;
+            font-size: 32px;
+            font-weight: normal;
+            letter-spacing: 1px;
+        }
 
-    @media (max-width: 650px) {
-      .cards { grid-template-columns: 1fr; }
-      .hero { padding: 45px 18px; }
-      .brand { font-size: 28px; }
-      th, td { padding: 9px 7px; font-size: 14px; }
-      .soft-section { padding: 22px 16px; }
-    }
-  </style>
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px 25px;
+            padding: 15px 20px;
+            background: var(--cream);
+            border-top: 1px solid #e3ded4;
+            border-bottom: 1px solid #e3ded4;
+        }
+
+        nav a {
+            color: var(--dark-green);
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: var(--rose);
+            text-align: center;
+            padding: 65px 22px;
+        }
+
+        .hero h1 {
+            font-family: Georgia, serif;
+            font-size: clamp(34px, 6vw, 52px);
+            font-weight: normal;
+            line-height: 1.2;
+            max-width: 800px;
+            margin: 0 auto 18px;
+            color: var(--dark-green);
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: 0 auto;
+            font-size: 17px;
+        }
+
+        main {
+            max-width: 1050px;
+            margin: 0 auto;
+            padding: 45px 22px;
+        }
+
+        h2 {
+            color: var(--dark-green);
+            font-family: Georgia, serif;
+            font-weight: normal;
+            font-size: 29px;
+        }
+
+        h3 {
+            color: var(--dark-green);
+            font-family: Georgia, serif;
+            font-weight: normal;
+            font-size: 22px;
+        }
+
+        .intro {
+            max-width: 760px;
+            margin: 0 auto 35px;
+            text-align: center;
+        }
+
+        .class-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 22px;
+        }
+
+        .class-card {
+            padding: 25px;
+            background: var(--white);
+            border-radius: 10px;
+        }
+
+        .class-card h3 {
+            margin-top: 0;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 4px 10px;
+            background: #e6eade;
+            color: var(--dark-green);
+            border-radius: 20px;
+            font-size: 12px;
+        }
+
+        .highlight {
+            margin-top: 35px;
+            padding: 28px;
+            background: #e8ece3;
+            border-radius: 10px;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 12px 22px;
+            background: var(--dark-green);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        footer {
+            padding: 25px 20px;
+            text-align: center;
+            background: var(--dark-green);
+            color: var(--white);
+            font-size: 13px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        @media (max-width: 600px) {
+            .logo {
+                font-size: 27px;
+            }
+
+            nav {
+                gap: 10px 16px;
+            }
+
+            .hero {
+                padding: 50px 18px;
+            }
+
+            main {
+                padding: 30px 18px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-  <div class="notice">
-    This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.
-  </div>
+    <div class="notice">
+        This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.
+    </div>
 
-  <header>
-    <p class="brand">Form &amp; Flow Pilates</p>
-    <p class="tagline">Move with intention</p>
-  </header>
+    <header>
+        <p class="logo">Form &amp; Flow Pilates</p>
+    </header>
 
-  <nav aria-label="Main navigation">
-    <a href="index.html">Home</a>
-    <a href="classes.html">Mat Pilates Classes</a>
-    <a href="beginners.html">Beginner Pilates</a>
-    <a href="campus.html">Near Campus</a>
-    <a href="pricing.html">Pricing &amp; Memberships</a>
-  </nav>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="classes.html">Mat Pilates Classes</a>
+        <a href="beginners.html">Beginner Pilates</a>
+        <a href="campus.html">Near Campus</a>
+        <a href="pricing.html">Pricing &amp; Memberships</a>
+    </nav>
 
-  <section class="hero">
-    <h1>Mat Pilates Classes in Iowa City, IA</h1>
-    <p>
-      Discover a mindful way to move with mat Pilates classes focused on
-      core stability, flexibility, posture, and full-body strength.
-      Find a class style that matches your experience and goals.
-    </p>
-  </section>
-
-  <main>
-    <section>
-      <h2>Find the class that fits your day</h2>
-      <p>
-        At Form &amp; Flow Pilates, our fictional class offerings are designed
-        to make movement feel approachable and rewarding. Mat Pilates uses
-        your body weight and a floor mat rather than large exercise machines.
-        Exercises combine controlled movement with breathing and attention
-        to alignment. A mat, comfortable clothing, and a willingness to learn
-        are all you need to get started.
-      </p>
+    <section class="hero">
+        <h1>Mat Pilates Classes</h1>
+        <p>Build strength, improve flexibility, and find your flow through intentional movement in a welcoming studio environment.</p>
     </section>
 
-    <section class="cards">
-      <article class="card">
-        <h3>Foundation Flow</h3>
-        <p><strong>Level:</strong> Beginner-friendly</p>
-        <p>
-          A welcoming introduction to Pilates principles, including breathing,
-          pelvic stability, posture, and simple movements that build confidence.
-        </p>
-        <p><strong>Focus:</strong> Technique and body awareness</p>
-      </article>
+    <main>
+        <section class="intro">
+            <h2>Movement That Meets You Where You Are</h2>
+            <p>At Form &amp; Flow Pilates, our mat classes focus on controlled movements, mindful breathing, core strength, and proper alignment. Whether you are looking for a gentle reset or a more challenging workout, there is a class for you.</p>
+        </section>
 
-      <article class="card">
-        <h3>Core &amp; Control</h3>
-        <p><strong>Level:</strong> All levels</p>
-        <p>
-          A thoughtful sequence of exercises that challenges core stability
-          while encouraging precise movement and steady breathing.
-        </p>
-        <p><strong>Focus:</strong> Core strength and control</p>
-      </article>
+        <section class="class-grid">
+            <article class="class-card">
+                <span class="tag">All Levels</span>
+                <h3>Classic Mat Pilates</h3>
+                <p>A full-body workout centered on core stability, posture, balance, and controlled movement. A great way to build a consistent Pilates practice.</p>
+                <p><strong>Duration:</strong> 50 minutes</p>
+            </article>
 
-      <article class="card">
-        <h3>Stretch &amp; Restore</h3>
-        <p><strong>Level:</strong> Gentle pace</p>
-        <p>
-          A slower session combining accessible Pilates movements and
-          mobility-focused stretches to help you reconnect with your body.
-        </p>
-        <p><strong>Focus:</strong> Mobility and relaxation</p>
-      </article>
+            <article class="class-card">
+                <span class="tag">Low Impact</span>
+                <h3>Gentle Flow</h3>
+                <p>A slower-paced class with mindful transitions, mobility work, and stretches to help you reconnect with your body and release tension.</p>
+                <p><strong>Duration:</strong> 45 minutes</p>
+            </article>
 
-      <article class="card">
-        <h3>Full-Body Flow</h3>
-        <p><strong>Level:</strong> Familiar with the basics</p>
-        <p>
-          A flowing series of mat exercises that works different muscle
-          groups while emphasizing coordination, balance, and control.
-        </p>
-        <p><strong>Focus:</strong> Total-body conditioning</p>
-      </article>
-    </section>
+            <article class="class-card">
+                <span class="tag">Strength Focus</span>
+                <h3>Power Pilates</h3>
+                <p>A more challenging mat session that combines longer holds, precise repetitions, and dynamic sequences to build strength and endurance.</p>
+                <p><strong>Duration:</strong> 50 minutes</p>
+            </article>
 
-    <section class="soft-section">
-      <h2>What are the benefits of mat Pilates?</h2>
-      <p>
-        A consistent Pilates practice can help develop core strength,
-        balance, flexibility, coordination, and awareness of posture.
-        The controlled pace encourages you to pay attention to how you move
-        instead of rushing through repetitions. Results vary by individual,
-        and Pilates can complement other forms of physical activity.
-      </p>
-    </section>
+            <article class="class-card">
+                <span class="tag">Mind &amp; Body</span>
+                <h3>Stretch &amp; Restore</h3>
+                <p>A restorative session that emphasizes flexibility, breathing, gentle core activation, and relaxation. Perfect for a reset after a busy day.</p>
+                <p><strong>Duration:</strong> 40 minutes</p>
+            </article>
+        </section>
 
-    <section>
-      <h2>A sample weekly class schedule</h2>
-      <p>
-        The schedule below is an example for this fictional studio and
-        does not represent real classes or booking availability.
-      </p>
+        <section class="highlight">
+            <h2>Not Sure Which Class to Choose?</h2>
+            <p>If you are new to Pilates, start with our beginner guide to learn what to expect, what to bring, and how to feel confident in your first class.</p>
+            <a class="button" href="beginners.html">Explore Beginner Pilates</a>
+        </section>
+    </main>
 
-      <table>
-        <thead>
-          <tr>
-            <th scope="col">Day</th>
-            <th scope="col">Class</th>
-            <th scope="col">Time</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>Monday</td><td>Foundation Flow</td><td>5:30 p.m.</td></tr>
-          <tr><td>Tuesday</td><td>Core &amp; Control</td><td>7:00 a.m.</td></tr>
-          <tr><td>Wednesday</td><td>Stretch &amp; Restore</td><td>5:30 p.m.</td></tr>
-          <tr><td>Thursday</td><td>Full-Body Flow</td><td>6:00 p.m.</td></tr>
-          <tr><td>Saturday</td><td>Foundation Flow</td><td>9:00 a.m.</td></tr>
-        </tbody>
-      </table>
-    </section>
-
-    <section>
-      <h2>Prepare for your first class</h2>
-      <p>
-        Wear comfortable clothing that lets you move freely and bring water.
-        Arrive with an open mind, take breaks when needed, and tell your
-        instructor about movement concerns before class. Exercises can often
-        be adjusted to suit different experience levels. If you are unsure
-        whether a movement is appropriate for you, ask your healthcare
-        professional for guidance.
-      </p>
-      <p>
-        New to Pilates? Visit our
-        <a href="beginners.html">beginner mat Pilates guide</a>.
-      </p>
-      <p>
-        Looking for class packages or monthly options? Visit our
-        <a href="pricing.html">pricing and memberships page</a>.
-      </p>
-    </section>
-  </main>
-
-  <footer>
-    <p>
-      This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.
-    </p>
-    <p>Form &amp; Flow Pilates | Iowa City, Iowa</p>
-    <p>
-      <a href="index.html">Home</a> ·
-      <a href="classes.html">Classes</a> ·
-      <a href="beginners.html">Beginners</a> ·
-      <a href="campus.html">Near Campus</a> ·
-      <a href="pricing.html">Pricing &amp; Memberships</a>
-    </p>
-  </footer>
+    <footer>
+        <p><strong>Form &amp; Flow Pilates</strong> | Iowa City, Iowa</p>
+        <p>Fictional business created for a University of Iowa class project.</p>
+    </footer>
 </body>
 </html>
 
