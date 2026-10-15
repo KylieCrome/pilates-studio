@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore mat Pilates class prices, class packages, and monthly memberships at Form & Flow Pilates, a fictional Pilates studio in Iowa City, Iowa.">
+  <title>Mat Pilates Pricing & Memberships | Form & Flow Pilates</title>
+  <style>
+    :root {
+      --cream: #f8f5ef;
+      --sage: #879783;
+      --dark: #303b32;
+      --rose: #e9d8ce;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--cream);
+      color: var(--dark);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+
+    .notice {
+      background: #e8e2d8;
+      text-align: center;
+      padding: 12px 18px;
+      font-size: 13px;
+    }
+
+    header {
+      padding: 25px 20px;
+      text-align: center;
+      background: var(--cream);
+    }
+
+    .brand {
+      font-family: Georgia, serif;
+      font-size: 32px;
+      letter-spacing: 1px;
+      margin: 0;
+    }
+
+    .tagline {
+      margin: 2px 0 18px;
+      font-size: 13px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px 24px;
+      padding: 14px 16px;
+      background: var(--sage);
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    nav a:hover,
+    nav a:focus {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: var(--rose);
+      text-align: center;
+      padding: 65px 22px;
+    }
+
+    .hero h1 {
+      font-family: Georgia, serif;
+      font-weight: normal;
+      font-size: clamp(34px, 6vw, 52px);
+      line-height: 1.2;
+      max-width: 800px;
+      margin: 0 auto 20px;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: 0 auto;
+      font-size: 17px;
+    }
+
+    main {
+      max-width: 1050px;
+      margin: auto;
+      padding: 45px 22px;
+    }
+
+    h2 {
+      font-family: Georgia, serif;
+      font-size: 30px;
+      font-weight: normal;
+      line-height: 1.3;
+    }
+
+    h3 {
+      font-family: Georgia, serif;
+      font-size: 22px;
+      font-weight: normal;
+    }
+
+    .intro {
+      max-width: 760px;
+      margin: 0 auto 40px;
+      text-align: center;
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+      margin: 30px 0 45px;
+    }
+
+    .price-card {
+      background: var(--white);
+      padding: 26px 22px;
+      border-top: 4px solid var(--sage);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .price-card h3 {
+      margin-top: 0;
+    }
+
+    .price {
+      font-family: Georgia, serif;
+      font-size: 36px;
+      margin: 8px 0;
+    }
+
+    .price span {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+
+    .price-card ul {
+      padding-left: 20px;
+      margin-bottom: 22px;
+    }
+
+    .price-card li {
+      margin-bottom: 8px;
+    }
+
+    .plan-label {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #536450;
+      font-weight: bold;
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--dark);
+      color: white;
+      padding: 12px 18px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 3px;
+      font-weight: bold;
+      margin-top: auto;
+    }
+
+    .button:hover,
+    .button:focus {
+      background: #526451;
+    }
+
+    .soft-section {
+      background: #e8e9df;
+      padding: 30px;
+      margin: 35px 0;
+    }
+
+    .soft-section h2 {
+      margin-top: 0;
+    }
+
+    .faq {
+      background: white;
+      padding: 22px 25px;
+      margin: 16px 0;
+    }
+
+    .faq h3 {
+      margin-top: 0;
+    }
+
+    .small-note {
+      font-size: 13px;
+      color: #555d53;
+    }
+
+    footer {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 28px 20px;
+      font-size: 13px;
+    }
+
+    footer a {
+      color: white;
+    }
+
+    @media (max-width: 750px) {
+      .pricing-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 48px 20px;
+      }
+
+      .brand {
+        font-size: 28px;
+      }
+
+      .soft-section {
+        padding: 24px 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="notice">
+    This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.
+  </div>
+
+  <header>
+    <p class="brand">Form &amp; Flow Pilates</p>
+    <p class="tagline">Move with intention</p>
+  </header>
+
+  <nav aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="classes.html">Mat Pilates Classes</a>
+    <a href="beginners.html">Beginner Pilates</a>
+    <a href="campus.html">Near Campus</a>
+    <a href="pricing.html">Pricing &amp; Memberships</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Pricing That Moves With You</h1>
+    <p>
+      Make space for yourself with flexible mat Pilates options.
+      Whether you want to try one class or build a consistent weekly
+      routine, find a plan that fits your goals and budget.
+    </p>
+  </section>
+
+  <main>
+    <section class="intro">
+      <h2>Simple, flexible Pilates pricing</h2>
+      <p>
+        At Form &amp; Flow Pilates, we believe building a movement routine
+        should feel approachable. Our fictional pricing options include
+        single classes, class packages, and monthly memberships so you
+        can choose the commitment that works best for your lifestyle.
+      </p>
+      <p>
+        All prices on this page are fictional examples created for an
+        educational project. They are not real offers or available for purchase.
+      </p>
+    </section>
+
+    <section>
+      <h2>Drop-in classes and packages</h2>
+      <div class="pricing-grid">
+        <article class="price-card">
+          <p class="plan-label">Try a class</p>
+          <h3>Single Class</h3>
+          <p class="price">$18 <span>/ class</span></p>
+          <p>
+            A simple way to experience mat Pilates without committing
+            to a package or membership.
+          </p>
+          <ul>
+            <li>One group mat Pilates class</li>
+            <li>Choose from available class styles</li>
+            <li>Great for first-time visitors</li>
+          </ul>
+          <a class="button" href="beginners.html">Explore Beginner Pilates</a>
+        </article>
+
+        <article class="price-card">
+          <p class="plan-label">Build a routine</p>
+          <h3>Five-Class Package</h3>
+          <p class="price">$80 <span>/ 5 classes</span></p>
+          <p>
+            Save on individual classes while giving yourself time
+            to practice and build confidence.
+          </p>
+          <ul>
+            <li>Five group mat Pilates classes</li>
+            <li>$16 per class</li>
+            <li>Ideal for occasional practice</li>
+          </ul>
+          <a class="button" href="classes.html">Explore Class Options</a>
+        </article>
+
+        <article class="price-card">
+          <p class="plan-label">Practice regularly</p>
+          <h3>Ten-Class Package</h3>
+          <p class="price">$145 <span>/ 10 classes</span></p>
+          <p>
+            A flexible option for people who want to attend classes
+            regularly without a monthly membership.
+          </p>
+          <ul>
+            <li>Ten group mat Pilates classes</li>
+            <li>$14.50 per class</li>
+            <li>Flexible class selection</li>
+          </ul>
+          <a class="button" href="classes.html">Find Your Class</a>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Monthly memberships</h2>
+      <p>
+        If Pilates is becoming a regular part of your week, a monthly
+        membership may offer a convenient way to plan your workouts.
+        Each fictional membership below is designed for a different
+        level of participation.
+      </p>
+
+      <div class="pricing-grid">
+        <article class="price-card">
+          <p class="plan-label">A gentle start</p>
+          <h3>Essential</h3>
+          <p class="price">$59 <span>/ month</span></p>
+          <p>
+            A manageable introduction to a consistent movement routine.
+          </p>
+          <ul>
+            <li>Four group classes per month</li>
+            <li>About one class per week</li>
+            <li>Access to beginner-friendly formats</li>
+          </ul>
+          <a class="button" href="beginners.html">Learn the Basics</a>
+        </article>
+
+        <article class="price-card">
+          <p class="plan-label">A balanced routine</p>
+          <h3>Flow</h3>
+          <p class="price">$99 <span>/ month</span></p>
+          <p>
+            More opportunities to practice, learn, and explore different
+            class formats throughout the month.
+          </p>
+          <ul>
+            <li>Eight group classes per month</li>
+            <li>About two classes per week</li>
+            <li>Choose from available group classes</li>
+          </ul>
+          <a class="button" href="classes.html">Explore Classes</a>
+        </article>
+
+        <article class="price-card">
+          <p class="plan-label">Make it a habit</p>
+          <h3>Unlimited</h3>
+          <p class="price">$129 <span>/ month</span></p>
+          <p>
+            An option for people who want the freedom to attend classes
+            frequently as their schedule allows.
+          </p>
+          <ul>
+            <li>Unlimited regular group classes</li>
+            <li>Explore different class formats</li>
+            <li>Designed for frequent practice</li>
+          </ul>
+          <a class="button" href="classes.html">View Class Options</a>
+        </article>
+      </div>
+
+      <p class="small-note">
+        Membership prices are illustrative. Real studios may have different
+        pricing, attendance rules, cancellation terms, and package expiration
+        policies.
+      </p>
+    </section>
+
+    <section class="soft-section">
+      <h2>Which option is right for you?</h2>
+      <p>
+        If you are new to mat Pilates, start with a single class to discover
+        whether the style feels right for you. A five- or ten-class package
+        can work well if your schedule changes from week to week. If you
+        already know that you enjoy Pilates and want to attend consistently,
+        a monthly membership may offer better value.
+      </p>
+      <p>
+        The best plan is one you can comfortably afford and realistically
+        fit into your routine. There is no need to choose the most expensive
+        option to make progress.
+      </p>
+    </section>
+
+    <section>
+      <h2>Frequently asked questions about pricing</h2>
+
+      <article class="faq">
+        <h3>How much does a mat Pilates class cost?</h3>
+        <p>
+          In this fictional pricing guide, a single group mat Pilates class
+          costs $18. Class packages reduce the average price per class for
+          people who plan to attend more often.
+        </p>
+      </article>
+
+      <article class="faq">
+        <h3>Is a membership cheaper than paying per class?</h3>
+        <p>
+          It depends on how frequently you attend. The Essential membership
+          is $59 for four classes, or $14.75 per class. The Flow membership
+          is $99 for eight classes, or about $12.38 per class. The Unlimited
+          membership may offer the greatest value for frequent attendance.
+        </p>
+      </article>
+
+      <article class="faq">
+        <h3>Is there a student discount?</h3>
+        <p>
+          Student-friendly pricing is an important consideration for a
+          studio serving a college community. This fictional website does
+          not advertise a separate student discount, but a real studio
+          could introduce one to make classes more accessible.
+        </p>
+      </article>
+
+      <article class="faq">
+        <h3>Do I need to buy equipment?</h3>
+        <p>
+          Mat Pilates generally requires only a comfortable exercise mat.
+          Some classes may use optional small props. Before attending a
+          real class, check whether mats and other equipment are provided.
+        </p>
+      </article>
+
+      <article class="faq">
+        <h3>Can beginners purchase a membership?</h3>
+        <p>
+          Yes, in this fictional example, beginners can choose any pricing
+          option. If you are new to Pilates, you may prefer to try a single
+          class first and then decide whether a package or membership fits
+          your goals.
+        </p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Ready to find your flow?</h2>
+      <p>
+        Your Pilates routine should support your life, not add unnecessary
+        stress to it. Start where you feel comfortable, make room for
+        consistent movement, and choose a plan that matches your needs.
+      </p>
+      <p>
+        Visit our <a href="classes.html">class guide</a> to explore the
+        different mat Pilates formats, or read our
+        <a href="beginners.html">beginner guide</a> if you are preparing
+        for your first session.
+      </p>
+      <a class="button" href="index.html">Return to Home</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.
+    </p>
+    <p>Form &amp; Flow Pilates | Iowa City, Iowa</p>
+    <p>
+      <a href="index.html">Home</a> ·
+      <a href="classes.html">Classes</a> ·
+      <a href="beginners.html">Beginners</a> ·
+      <a href="campus.html">Near Campus</a> ·
+      <a href="pricing.html">Pricing &amp; Memberships</a>
+    </p>
+  </footer>
+</body>
+</html>
