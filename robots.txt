@@ -1,0 +1,5 @@
+
+User-agent: *
+Allow: /
+
+Sitemap: https://kyliecrome.github.io/pilates-studio/sitemap.xml
