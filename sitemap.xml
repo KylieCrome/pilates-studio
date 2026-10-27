@@ -1,19 +1,24 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
     <url>
         <loc>https://kyliecrome.github.io/pilates-studio/index.html</loc>
     </url>
+
     <url>
         <loc>https://kyliecrome.github.io/pilates-studio/classes.html</loc>
     </url>
+
     <url>
         <loc>https://kyliecrome.github.io/pilates-studio/beginners.html</loc>
     </url>
+
     <url>
         <loc>https://kyliecrome.github.io/pilates-studio/campus.html</loc>
     </url>
+
     <url>
         <loc>https://kyliecrome.github.io/pilates-studio/pricing.html</loc>
     </url>
+
 </urlset>
